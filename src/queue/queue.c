@@ -46,6 +46,10 @@ int dequeue() {
         return -1;
     }else{
         return  Queue[head++];
+        if(head>tail){
+            head=-1;
+            tail=-1;
+        }
     }
 }
 
